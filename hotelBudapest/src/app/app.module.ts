@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { FormularioReservaComponent } from './formulario-reserva/formulario-reserva.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormularioReservaComponent
   ],
   imports: [
     BrowserModule,
