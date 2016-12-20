@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FormularioReservaComponent } from './formulario-reserva/formulario-reserva.component';
+import { FilaHabitacionComponent } from './fila-habitacion/fila-habitacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioReservaComponent
+    FormularioReservaComponent,
+    FilaHabitacionComponent
   ],
   imports: [
     BrowserModule,
