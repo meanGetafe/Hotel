@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { FormularioReservaComponent } from './formulario-reserva/formulario-reserva.component';
-import { FilaHabitacionComponent } from './fila-habitacion/fila-habitacion.component';
+import { FormularioReservaComponent } from './components/formulario-reserva/formulario-reserva.component';
+import { FilaHabitacionComponent } from './components/fila-habitacion/fila-habitacion.component';
 
 @NgModule({
   declarations: [
