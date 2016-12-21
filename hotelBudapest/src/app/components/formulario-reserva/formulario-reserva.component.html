@@ -1,12 +1,10 @@
-<div class="tabla">
-  <form action="" >
-    <input type="button" value="Agregar" id="agregar" (click)="agregarFila()">
-    
-    <input type="submit" value="Enviar" id="enviar">
-    <br><br>
-    <div *ngFor="let habitacion of habitaciones">
-      <app-fila-habitacion></app-fila-habitacion>
-      <input type="button" value="Eliminar" (click)="eliminarFila(habitacion)">
-    </div>
-  </form>
-</div>
+<form action="" >
+  <input type="button" value="Agregar" (click)="agregarFila()">
+  <br>
+  <div *ngFor="let habitacion of habitaciones">
+    <app-fila-habitacion></app-fila-habitacion>
+  <input type="button" value="Eliminar" (click)="eliminarFila(habitacion)">
+  </div>
+  <br>
+  <input type="submit" value="Enviar" (click)="reservar()">
+</form>

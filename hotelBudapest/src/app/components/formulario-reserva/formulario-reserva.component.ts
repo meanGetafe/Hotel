@@ -26,6 +26,10 @@ export class FormularioReservaComponent implements OnInit {
     this.habitaciones.splice(this.habitaciones.indexOf(posicion), 1);
   }
 
+  reservar(){
+    console.log('funciona!!');
+  }
+
   ngOnInit() {
   }
 
