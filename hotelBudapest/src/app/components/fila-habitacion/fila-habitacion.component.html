@@ -1,17 +1,19 @@
 <label for="">Tipo de habitación</label>
-<select>
+<select [(ngModel)]="room.tipo">
   <option value="Simple">Simple</option>
   <option value="Doble">Doble</option>
 </select>
-
+<br>
 <label for="">Categoria</label>
-<select>
+<select [(ngModel)]="room.categoria">
   <option value="Normal">Normal</option>
   <option value="Super">Super</option>
 </select>
-
+<br>
 <label for="">Fecha de entrada</label>
-<input type="date">
+<input type="date" [(ngModel)]="room.fechaEnt">
 
 <label for="">Fecha de salida</label>
-<input type="date">
+<input type="date" [(ngModel)]="room.fechaSal">
+<br>
+<input type="button" value="Confirmar" (click)="confirmarFila()">

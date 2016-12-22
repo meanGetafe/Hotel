@@ -1,10 +1,15 @@
-<form action="" >
-  <input type="button" value="Agregar" (click)="agregarFila()">
-  <br>
-  <div *ngFor="let habitacion of habitaciones">
-    <app-fila-habitacion></app-fila-habitacion>
-  <input type="button" value="Eliminar" (click)="eliminarFila(habitacion)">
-  </div>
-  <br>
-  <input type="submit" value="Enviar" (click)="reservar()">
-</form>
+<div id="miForm">
+  <form action="">
+    <input type="button" value="Agregar" (click)="agregarFila()">
+    <br>
+    <div *ngFor="let habitacion of habitaciones" id="fila">
+      <app-fila-habitacion (eventoEmitidoFila)="recogerDatosFila($event)"></app-fila-habitacion>
+      <input type="button" value="Eliminar" (click)="eliminarFila(habitacion)">
+    </div>
+    <br>
+    <input type="submit" value="Enviar" (click)="reservar()">
+  </form>
+</div>
+<div id="mensaje">
+  {{mensaje}} Aqui va el mensaje de respuesta
+</div>

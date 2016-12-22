@@ -6,6 +6,12 @@ export class Habitacion {
     private fechaEnt: any;
     private fechaSal: any;
 
-    constructor (){}
+    constructor() {
+        this._id = "";
+        this.tipo = "";
+        this.categoria = "";
+        this.fechaEnt = "";
+        this.fechaSal = "";
+    }
 
 }
