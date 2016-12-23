@@ -9,10 +9,12 @@ div#contenedor{
 div#cabecera{
     background-image: url("../assets/images/hotelBudapest.jpg");
     background-size: 1024px 300px;
-    width: 1024px;
+    width: 1019px;
     height: 300px;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 50px 50px;
+    box-shadow: 5px 5px 30px #6D3A49;
+    margin: 5px;
 }
 h1{
     color: white;

@@ -9,7 +9,7 @@ import { Habitacion } from '../model/habitacion'
 @Injectable()
 export class ReservaService {
 
-  private url: string = "http://localhost:1111/hotel/consulta";
+  private url: string = "http://10.0.3.8:1111/hotel/reserva";
   constructor(private http: Http) { }
 
   reservar(habitaciones: Habitacion[]): Observable<string> {

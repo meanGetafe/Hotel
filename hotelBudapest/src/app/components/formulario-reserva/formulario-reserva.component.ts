@@ -35,7 +35,7 @@ export class FormularioReservaComponent implements OnInit {
   reservar() {
     console.log("Entra en reserva");
     this.service.reservar(this.rooms).subscribe((mensaje) => {
-      this.mensaje = mensaje;
+      this.mensaje = JSON.stringify(mensaje);
     }, (error) => {
       console.log("Error", error);
     }, () => {
