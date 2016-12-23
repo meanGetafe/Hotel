@@ -8,13 +8,15 @@ div#miForm{
     box-shadow: 5px 5px 30px #6D3A49;
 }
 div#chat{
-
     width: 304px;
     float: left;
-    padding: 20px;
     margin: 5px;
     border-radius: 50px 50px;
     box-shadow: 5px 5px 30px #6D3A49;
+    background-image: url("../assets/images/chat.png");
+    height: 292px;
+    background-repeat: no-repeat;
+    background-size: 304px 292px;
 }
 div#mensaje{
 
